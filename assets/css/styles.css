@@ -1,0 +1,73 @@
+.cardSingIn {
+    background-image: url('../img/4574.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+}
+
+.contenidoForm {
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.activeTab {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #007bff !important;
+}
+.activeTab2 {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #ffdd00 !important;
+}
+.pInfo {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+label {
+    color: rgb(175, 174, 166);
+    font-weight: 600;
+    font-size: 14px !important;
+}
+
+.inputForm {
+    background-color:  rgba(175, 174, 166, 0.479) !important;
+    border-radius: 25px !important;
+    border-color: rgba(179, 157, 109, 0.386) !important;
+    color: rgb(179, 179, 179) !important;
+    height: 60px;
+}
+
+::placeholder {
+    color: rgb(223, 223, 222) !important;
+}
+.labelCheck{
+    color: white;
+}
+#btnSign, #btnSign2{
+    border-radius: 25px !important;
+    height: 60px;
+    margin-bottom: 50px;
+}
+hr{
+    color: #cfcfcf;
+}
+#tab2{
+display: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conciertos+</title>
+  <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="asignarFunciones()">
+  <div class="container">
+    <br>
+    <div class="cardSingIn">
+      <div class="contenidoForm">
+        <div class="tabsRegistro">
+          <a href="#" class="activeTab" id="tabUno">SIGN UP</a>
+          <a href="#" id="tabDos">VIP</a>
+        </div>
+        <div class="contenidoTab1" id="tab1">
+          <p class="pInfo">Complete los siguientes campos para crear su cuenta regular. Considere que a este tipo de
+            cuenta se le asigna un nombre de usuario.</p>
+          <div class="formulario mt-3">
+            <label class="form-label" for="correo">CORREO</label><br>
+            <input class="form-control inputForm" type="text" id="correo" name="correo"
+              placeholder="Ingresa tu correo"><br>
+            <label class="form-label" for="pass">CONTRASEÑA</label><br>
+            <input class="form-control inputForm" type="text" id="pass" name="pass"
+              placeholder="Ingresa tu contraseña"><br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="check1">
+              <label class="form-check-label labelCheck" for="check1">
+                Acepto los términos y condiciones.
+              </label>
+            </div>
+            <div class="row text-center mt-5">
+              <button type="button" class="btn btn-primary" id="btnSign" data-bs-toggle="modal"
+                data-bs-target="#modalInfo">SIGN UP</button>
+              <br>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="contenidoTab2" id="tab2">
+          <p class="pInfo">Complete los siguientes campos para crear su cuenta VIP. Por ser un usuario VIP podrá crear
+            su nombre de usuario personalizado.</p>
+          <div class="formulario mt-3">
+            <label class="form-label" for="userName">NOMBRE DE USUARIO</label><br>
+            <input class="form-control inputForm" type="text" id="userName" name="userName"
+              placeholder="Ingrese su nombre de usuario"><br>
+            <label class="form-label" for="correoVip">CORREO</label><br>
+            <input class="form-control inputForm" type="text" id="correoVip" name="correoVip"
+              placeholder="Ingrese su correo"><br>
+            <label class="form-label" for="passVip">CONTRASEÑA</label><br>
+            <input class="form-control inputForm" type="text" id="passVip" name="passVip"
+              placeholder="Ingrese su contraseña"><br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="check2">
+              <label class="form-check-label labelCheck" for="check2">
+                Acepto los términos y condiciones.
+              </label>
+            </div>
+            <div class="row text-center mt-5">
+              <button type="button" class="btn btn-warning" id="btnSign2" data-bs-toggle="modal"
+                data-bs-target="#modalInfo">SIGN UP</button>
+              <br>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="nombreDeUsuario"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="msjModal"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
